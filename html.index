@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>17 SDG — Action for a Better Future</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A simple, accessible website introducing the 17 Sustainable Development Goals and ways to take action locally.">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="brand">17 SDG — Act Now</h1>
+            <nav aria-label="Main navigation">
+                <ul class="nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#goals">The 17 Goals</a></li>
+                    <li><a href="#take-action">Take Action</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Join a global movement for people and planet</h2>
+                <p>Learn about the 17 United Nations Sustainable Development Goals (SDGs) and find small, practical actions you can take today.</p>
+                <p><a class="btn primary" href="#goals">Explore the Goals</a></p>
+            </div>
+        </section>
+
+        <section id="about" class="container section-padding">
+            <h3>About</h3>
+            <p>The **17 Sustainable Development Goals (SDGs)** are a universal call to action to end poverty, protect the planet and ensure that all people enjoy peace and prosperity. This simple website introduces each goal and links to the official UN pages for more detail.</p>
+        </section>
+
+        <section id="goals" class="container section-padding">
+            <h3>The 17 Goals</h3>
+            <p class="lead">Click any card to learn more on the UN SDG site.</p>
+            <div class="sdg-grid" role="list">
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal1" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg1_logo.png" class="goal-icon" alt="Goal 1: No Poverty icon" />
+                            <div class="card-text">
+                                <h4>No Poverty</h4>
+                                <p>End poverty in all its forms everywhere.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal2" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg2_logo.png" class="goal-icon" alt="Goal 2: Zero Hunger icon" />
+                            <div class="card-text">
+                                <h4>Zero Hunger</h4>
+                                <p>End hunger, achieve food security and improved nutrition.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal3" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg3_logo.png" class="goal-icon" alt="Goal 3: Good Health and Well-being icon" />
+                            <div class="card-text">
+                                <h4>Good Health and Well-being</h4>
+                                <p>Ensure healthy lives and promote well-being for all at all ages.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal4" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg4_logo.png" class="goal-icon" alt="Goal 4: Quality Education icon" />
+                            <div class="card-text">
+                                <h4>Quality Education</h4>
+                                <p>Ensure inclusive and equitable quality education and promote lifelong learning.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal5" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg5_logo.png" class="goal-icon" alt="Goal 5: Gender Equality icon" />
+                            <div class="card-text">
+                                <h4>Gender Equality</h4>
+                                <p>Achieve gender equality and empower all women and girls.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal6" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg6_logo.png" class="goal-icon" alt="Goal 6: Clean Water and Sanitation icon" />
+                            <div class="card-text">
+                                <h4>Clean Water and Sanitation</h4>
+                                <p>Ensure availability and sustainable management of water and sanitation.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal7" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg7_logo.png" class="goal-icon" alt="Goal 7: Affordable and Clean Energy icon" />
+                            <div class="card-text">
+                                <h4>Affordable and Clean Energy</h4>
+                                <p>Ensure access to affordable, reliable, sustainable and modern energy.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal8" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg8_logo.png" class="goal-icon" alt="Goal 8: Decent Work and Economic Growth icon" />
+                            <div class="card-text">
+                                <h4>Decent Work and Economic Growth</h4>
+                                <p>Promote sustained, inclusive and sustainable economic growth and decent work.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal9" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg9_logo.jpg" class="goal-icon" alt="Goal 9: Industry, Innovation and Infrastructure icon" />
+                            <div class="card-text">
+                                <h4>Industry, Innovation and Infrastructure</h4>
+                                <p>Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal10" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg10_logo.png" class="goal-icon" alt="Goal 10: Reduced Inequalities icon" />
+                            <div class="card-text">
+                                <h4>Reduced Inequalities</h4>
+                                <p>Reduce inequality within and among countries.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal11" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg11_logo.png" class="goal-icon" alt="Goal 11: Sustainable Cities and Communities icon" />
+                            <div class="card-text">
+                                <h4>Sustainable Cities and Communities</h4>
+                                <p>Make cities and human settlements inclusive, safe, resilient and sustainable.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal12" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg12_logo.png" class="goal-icon" alt="Goal 12: Responsible Consumption and Production icon" />
+                            <div class="card-text">
+                                <h4>Responsible Consumption and Production</h4>
+                                <p>Ensure sustainable consumption and production patterns.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal13" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg13_logo.png" class="goal-icon" alt="Goal 13: Climate Action icon" />
+                            <div class="card-text">
+                                <h4>Climate Action</h4>
+                                <p>Take urgent action to combat climate change and its impacts.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal14" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg14_logo.png" class="goal-icon" alt="Goal 14: Life Below Water icon" />
+                            <div class="card-text">
+                                <h4>Life Below Water</h4>
+                                <p>Conserve and sustainably use the oceans, seas and marine resources.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal15" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg15_logo.png" class="goal-icon" alt="Goal 15: Life on Land icon" />
+                            <div class="card-text">
+                                <h4>Life on Land</h4>
+                                <p>Protect, restore and promote sustainable use of terrestrial ecosystems.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal16" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg16_logo.png" class="goal-icon" alt="Goal 16: Peace and Justice Strong Institutions icon" />
+                            <div class="card-text">
+                                <h4>Peace and Justice Strong Institutions</h4>
+                                <p>Promote peaceful and inclusive societies for sustainable development.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="sdg-card" role="listitem">
+                    <a href="https://sdgs.un.org/goals/goal17" target="_blank" rel="noopener noreferrer">
+                        <div class="card-content">
+                            <img src="sdg17_logo.png" class="goal-icon" alt="Goal 17: Partnerships for the Goals icon" />
+                            <div class="card-text">
+                                <h4>Partnerships for the Goals</h4>
+                                <p>Strengthen means of implementation and revitalize the global partnership for sustainable development.</p>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="take-action" class="container section-padding take-action">
+            <h3>Take Action</h3>
+            <p class="lead">Every person can contribute to achieving the SDGs. Here are a few ways to start locally:</p>
+            <ul>
+                <li>**Educate Yourself & Others:** Learn more about one goal and share it with friends and family.</li>
+                <li>**Support Local Initiatives:** Volunteer locally or support a small NGO working on a specific SDG in your community.</li>
+                <li>**Practice Sustainable Living:** Reduce waste, conserve energy, save water, and support ethical and sustainable local businesses.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="container section-padding contact">
+            <h3>Contact & Contribution</h3>
+            <p>This project is open-source. If you'd like to contribute resources, ideas, or translations, open an issue or submit a pull request on the GitHub repository.</p>
+            <p><a class="btn secondary" href="https://github.com/Aknh-NPC/Final-Project" target="_blank">Project Repository (GitHub)</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Created by Aknh-NPC • Content references: <a href="https://sdgs.un.org">UN SDGs</a></p>
+        </div>
+    </footer>
+
+</body>
+</html># SDG-PROJECT

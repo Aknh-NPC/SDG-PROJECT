@@ -8,7 +8,7 @@
     --color-border: #333333; 
 
 
-    --max-width: 1200px;
+
     --spacing-xs: 0.5rem;
     --spacing-s: 1rem;
     --spacing-m: 2rem;
@@ -18,7 +18,6 @@
 
     font-family: 'Inter', sans-serif; 
     color-scheme: dark; 
-
 
     --sdg-1-red: #e5243b;
     --sdg-2-yellow: #dda63a;

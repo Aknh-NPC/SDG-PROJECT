@@ -1,27 +1,41 @@
 :root{
-    /* Color Palette */
-    --color-primary: #1e8449; /* A strong green, like a fresh, modern accent */
-    --color-secondary: #007bff; /* A nice blue for secondary actions/links */
-    --color-dark: #2c3e50; /* Darker text for better contrast */
-    --color-light: #f4f6f9; /* Light background */
+    --color-primary: #1e8449;
+    --color-secondary: #007bff; 
+    --color-dark: #2c3e50;
+    --color-light: #f4f6f9;
     --color-card: #ffffff;
-    --color-muted: #7f8c8d; /* Muted text */
+    --color-muted: #7f8c8d; 
 
-    /* Layout/Spacing */
+    --sdg-1-red: #e5243b;
+    --sdg-2-yellow: #dda63a;
+    --sdg-3-green: #4c9f38;
+    --sdg-4-burgundy: #c5192d;
+    --sdg-5-orange: #ff3a21;
+    --sdg-6-blue: #26bde2;
+    --sdg-7-orange-dark: #fcc30b;
+    --sdg-8-maroon: #a21942;
+    --sdg-9-orange-vibrant: #fd6925;
+    --sdg-10-pink: #dd1367;
+    --sdg-11-gold: #fd9d24;
+    --sdg-12-brown: #bf8b2e;
+    --sdg-13-green-dark: #3f7e44;
+    --sdg-14-blue-dark: #0a97d9;
+    --sdg-15-green-leaf: #56c02b;
+    --sdg-16-blue-navy: #00689d;
+    --sdg-17-blue-deep: #19486a;
+    
     --max-width: 1200px;
     --spacing-xs: 0.5rem;
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-l: 3rem;
     --radius: 8px;
-    --goal-size: 72px; /* Increased size for icons */
+    --goal-size: 72px; 
 
-    /* Typography */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color-scheme: light;
 }
 
-/* Base Styles */
 * {
     box-sizing: border-box;
 }
@@ -36,7 +50,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Reusable Components */
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -60,11 +73,10 @@ a {
     text-decoration: none;
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    border-radius: 40px; /* Pill shape */
+    border-radius: 40px; 
     font-weight: 600;
     transition: background-color 0.2s ease, transform 0.1s ease;
     text-transform: uppercase;
@@ -139,7 +151,6 @@ a {
     width: 100%;
 }
 
-/* Hero Section */
 .hero {
     padding: 4rem 0;
     text-align: center;
@@ -160,7 +171,6 @@ a {
     margin-right: auto;
 }
 
-/* About & Take Action Sections */
 .lead {
     color: var(--color-dark);
     font-weight: 500;
@@ -178,17 +188,32 @@ a {
     border-radius: var(--radius);
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
-
-
-/* SDG Grid */
 .sdg-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Wider columns */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin: var(--spacing-m) 0 0;
 }
+
+.sdg-card.goal-1 { background-color: var(--sdg-1-red); }
+.sdg-card.goal-2 { background-color: var(--sdg-2-yellow); }
+.sdg-card.goal-3 { background-color: var(--sdg-3-green); }
+.sdg-card.goal-4 { background-color: var(--sdg-4-burgundy); }
+.sdg-card.goal-5 { background-color: var(--sdg-5-orange); }
+.sdg-card.goal-6 { background-color: var(--sdg-6-blue); }
+.sdg-card.goal-7 { background-color: var(--sdg-7-orange-dark); }
+.sdg-card.goal-8 { background-color: var(--sdg-8-maroon); }
+.sdg-card.goal-9 { background-color: var(--sdg-9-orange-vibrant); }
+.sdg-card.goal-10 { background-color: var(--sdg-10-pink); }
+.sdg-card.goal-11 { background-color: var(--sdg-11-gold); }
+.sdg-card.goal-12 { background-color: var(--sdg-12-brown); }
+.sdg-card.goal-13 { background-color: var(--sdg-13-green-dark); }
+.sdg-card.goal-14 { background-color: var(--sdg-14-blue-dark); }
+.sdg-card.goal-15 { background-color: var(--sdg-15-green-leaf); }
+.sdg-card.goal-16 { background-color: var(--sdg-16-blue-navy); }
+.sdg-card.goal-17 { background-color: var(--sdg-17-blue-deep); }
+
 .sdg-card {
-    background: var(--color-card);
     border-radius: var(--radius);
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     transition: transform .2s ease, box-shadow .2s ease;
@@ -197,12 +222,15 @@ a {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
-
 .sdg-card a {
     display: block;
     color: inherit;
     padding: var(--spacing-s);
     height: 100%;
+}
+
+.sdg-card h4, .sdg-card p, .sdg-card a {
+    color: white;
 }
 
 .card-content {
@@ -211,26 +239,47 @@ a {
     align-items: center;
 }
 
-.goal-icon {
+.goal-visual {
+    position: relative;
     width: var(--goal-size);
     height: var(--goal-size);
-    border-radius: var(--radius);
     flex-shrink: 0;
+}
+
+.goal-icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.goal-number-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem; 
+    font-weight: 900;
+    color: white; 
+
+    mix-blend-mode: screen; 
+
+    z-index: 10; 
 }
 
 .card-text h4 {
     margin: 0 0 0.3rem;
     font-size: 1.15rem;
     line-height: 1.2;
-    color: var(--color-primary);
 }
 .card-text p {
     margin: 0;
-    color: var(--color-muted);
     font-size: 0.9rem;
 }
 
-/* Footer */
 .site-footer {
     padding: var(--spacing-m) 0;
     background: var(--color-dark);
@@ -246,21 +295,6 @@ a {
     text-decoration: underline;
 }
 
-/* Remove original incorrect/redundant styles */
-.goal-number, .goal-number::before {
-    /* These styles are now obsolete and removed */
-    display: none; 
-}
-.sr-only {
-    /* Kept for accessibility */
-    position: absolute !important;
-    width: 1px; height: 1px;
-    padding: 0; margin: -1px;
-    overflow: hidden; clip: rect(0 0 0 0);
-    white-space: nowrap; border: 0;
-}
-
-/* Media Queries for Responsiveness */
 @media (max-width: 900px) {
     .sdg-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -283,7 +317,7 @@ a {
         padding: var(--spacing-m) var(--spacing-s);
     }
     .sdg-card:hover {
-        transform: none; /* Disable hover effect on touch devices */
+        transform: none;
         box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 }

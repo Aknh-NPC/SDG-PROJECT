@@ -1,30 +1,25 @@
-/* --- Google Font Import (Inter) --- */
-/* Ensure the link is in your HTML <head> section! */
-
 :root{
-    /* Color Palette - DARK MODE */
-    --color-primary: #47cf7d; /* A bright, vibrant green for accents */
-    --color-secondary: #0096FF; /* A clean blue for secondary actions/links */
-    --color-background: #1e1e1e; /* Dark background */
-    --color-surface: #252526; /* Slightly lighter surface for cards/sections */
-    --color-text-light: #f1f1f1; /* Light text for good contrast */
-    --color-text-muted: #a0a0a0; /* Muted text */
-    --color-border: #333333; /* Soft border/divider color */
+    --color-primary: #47cf7d; 
+    --color-secondary: #0096FF; 
+    --color-background: #1e1e1e; 
+    --color-surface: #252526; 
+    --color-text-light: #f1f1f1; 
+    --color-text-muted: #a0a0a0;
+    --color-border: #333333; 
 
-    /* Layout/Spacing */
+
     --max-width: 1200px;
     --spacing-xs: 0.5rem;
     --spacing-s: 1rem;
     --spacing-m: 2rem;
     --spacing-l: 3rem;
     --radius: 8px;
-    --goal-size: 80px; /* Slightly larger icons */
+    --goal-size: 80px; 
 
-    /* 💡 TYPOGRAPHY: Set to the appealing 'Inter' font */
     font-family: 'Inter', sans-serif; 
-    color-scheme: dark; /* Signals browser to use dark mode preferences */
+    color-scheme: dark; 
 
-    /* SDG Color Variables */
+
     --sdg-1-red: #e5243b;
     --sdg-2-yellow: #dda63a;
     --sdg-3-green: #4c9f38;
@@ -44,7 +39,6 @@
     --sdg-17-blue-deep: #19486a;
 }
 
-/* Base Styles */
 * {
     box-sizing: border-box;
 }
@@ -53,13 +47,13 @@ html {
 }
 body {
     margin: 0;
-    background: var(--color-background); /* Dark background */
-    color: var(--color-text-light); /* Light text */
+    background: var(--color-background); 
+    color: var(--color-text-light); 
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
 }
 
-/* Reusable Components */
+
 .container {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -67,17 +61,17 @@ body {
 }
 .section-padding {
     padding: var(--spacing-l) var(--spacing-s);
-    background: var(--color-surface); /* Content sections are a distinct dark surface */
+    background: var(--color-surface); 
     margin: 0 0 var(--spacing-m) 0;
 }
 h2, h3 {
     margin-top: 0;
-    color: var(--color-primary); /* Use bright primary accent for headings */
+    color: var(--color-primary); 
     font-weight: 700;
 }
 h3 {
     font-size: 1.8rem;
-    border-bottom: 2px solid var(--color-border); /* Dark mode border */
+    border-bottom: 2px solid var(--color-border); 
     padding-bottom: var(--spacing-s);
     margin-bottom: var(--spacing-m);
 }
@@ -90,7 +84,6 @@ a:hover {
     color: var(--color-secondary);
 }
 
-/* Buttons */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
@@ -103,7 +96,7 @@ a:hover {
 }
 .btn.primary {
     background: var(--color-primary);
-    color: var(--color-background); /* Dark text on bright button */
+    color: var(--color-background);
 }
 .btn.primary:hover {
     background: var(--color-secondary);
@@ -123,7 +116,6 @@ a:hover {
     box-shadow: 0 6px 10px rgba(0,0,0,0.3);
 }
 
-/* Header */
 .site-header {
     background: var(--color-surface);
     color: var(--color-text-light);
@@ -173,17 +165,16 @@ a:hover {
     width: 100%;
 }
 
-/* Hero Section */
 .hero {
-    padding: 6rem 0; /* Increase padding for impact */
+    padding: 6rem 0;
     text-align: center;
-    background: var(--color-background); /* Deeper dark background */
+    background: var(--color-background); 
     border-bottom: 1px solid var(--color-border);
 }
 .hero h2 {
-    font-size: 3rem; /* Bigger title */
+    font-size: 3rem;
     margin: 0 0 var(--spacing-s);
-    color: var(--color-text-light); /* White title */
+    color: var(--color-text-light); 
     font-weight: 900;
 }
 .hero p {
@@ -194,7 +185,6 @@ a:hover {
     margin-right: auto;
 }
 
-/* About & Take Action Sections */
 .lead {
     color: var(--color-text-light);
     font-weight: 400;
@@ -213,7 +203,6 @@ a:hover {
     box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
-/* SDG Grid */
 .sdg-grid {
     display: grid;
     gap: 1.5rem;
@@ -221,7 +210,6 @@ a:hover {
     margin: var(--spacing-m) 0 0;
 }
 
-/* Goal Color Definitions */
 .sdg-card.goal-1 { background-color: var(--sdg-1-red); }
 .sdg-card.goal-2 { background-color: var(--sdg-2-yellow); }
 .sdg-card.goal-3 { background-color: var(--sdg-3-green); }
@@ -240,10 +228,9 @@ a:hover {
 .sdg-card.goal-16 { background-color: var(--sdg-16-blue-navy); }
 .sdg-card.goal-17 { background-color: var(--sdg-17-blue-deep); }
 
-/* Card General Styling */
 .sdg-card {
     border-radius: var(--radius);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* Stronger shadow in dark mode */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
     transition: transform .2s ease, box-shadow .2s ease;
 }
 .sdg-card:hover {
@@ -258,7 +245,7 @@ a:hover {
 }
 
 .sdg-card h4, .sdg-card p, .sdg-card a {
-    color: white; /* Ensure text is white against colored cards */
+    color: white;
 }
 .card-content {
     display: flex;
@@ -279,10 +266,8 @@ a:hover {
     object-fit: contain;
 }
 
-/* ❌ FIX IMPLEMENTED HERE: Hides the duplicate number overlay */
 .goal-number-text {
     visibility: hidden; 
-    /* The image itself contains the number, so we hide the HTML text number to prevent overlap and blend-mode issues. */
     
     position: absolute;
     top: 0;
@@ -304,18 +289,16 @@ a:hover {
     margin: 0 0 0.3rem;
     font-size: 1.15rem;
     line-height: 1.2;
-    font-weight: 600; /* Use Semibold weight from Inter */
+    font-weight: 600; 
 }
 .card-text p {
     margin: 0;
     font-size: 0.9rem;
 }
 
-
-/* Footer */
 .site-footer {
     padding: var(--spacing-m) 0;
-    background: var(--color-surface); /* Use surface color for footer */
+    background: var(--color-surface);
     color: var(--color-text-muted);
     margin-top: 0; 
     border-top: 1px solid var(--color-border);
@@ -329,7 +312,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Media Queries */
 @media (max-width: 900px) {
     .sdg-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
